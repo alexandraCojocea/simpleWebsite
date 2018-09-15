@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Fashion House</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+		<script type="text/javascript" src="java/java.js"></script>
+	</head>
+
+	<body>
+		<div class="maincontainer">
+			<header>
+				<img  src="img/logo.png"/>
+				<div class="button" onclick="openNav()"><img src="img/burger.png"></div>
+				<nav>
+					<ul id="nav">
+						 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index2.html">Products</a></li>
+						<li><a href="index3.html">About</a></li>
+						<li><a href="index4.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main id="contact">
+				<h2>Fashion House Contact Form</h2>
+				<p>If you want to contact us for any reason, please complete the form below.</p>
+				<p>It will take around 24 to 48 hours to receive an aswer by email.</p>
+				<p>If you want to contact us through postmail our PO Box is L5 449 London.</p>
+				<div class="form">
+					<form action="contact.php" method="post">
+						<label>First Name:</label><br>
+						<input type="text" name="firstname" placeholder="John"><br><br>
+						<label>Last Name:</label><br>
+						<input type="text" name="lastname" placeholder="Smith"><br><br>
+						<label>Male:</label>
+						<input type="radio" name="gender" value="male"> <br><br>
+						<label>Female:</label>
+						<input type="radio" name="gender" value="female"> <br><br>
+						<label>Date of Birth:</label><br>
+						<input type="date" name="dateofbirth" placeholder="dd/mm/yyyy"><br><br>
+						<label>Email:</label><br>
+						<input type="email" name="email" placeholder="www.example@yahoo.com"><br><br>
+						<label>Phone number:</label><br>
+						<input type="number" name="phonenumber" placeholder=" 00 40 + xxx xxxx xxx"><br><br>
+						<label>Password:</label><br>
+						<input type="password" name="password"><br><br>
+						<label>Message:</label><br><br>
+						<textarea></textarea><br><br>
+						<input onclick="myFunction()" class="submit" type="submit" name="submit" value="Submit"><br>
+					</form>
+				</div>		
+			</main>
+
+			<footer>
+				<div class="icon">
+					<p>Follow us:</p>
+					<a href="www.facebook.com"><img class="bounceInUp animated" src="img/facebook.png"/></a>
+					<a href="www.twitter.com"><img class="bounceInUp animated" src="img/twitter.png"/></a>
+					<a href="www.instagram.com"><img class="bounceInUp animated" src="img/instagram.png"/></a>
+				</div>
+
+				<div class="order">
+					<h2>Designer Winter Line</h2>
+					<img src="img/order.png"/>
+					<p>
+						Contact<br>
+						<br>
+						Address: New Elwood, England, B6 435.<br>
+						Telephone number: (40+) 075 976 9847<br>
+						E-mail: randomemail@google.com<br>
+					</p>
+				</div>
+				
+				<div class="copyright">
+					<p>Copyright of this website is held by Alexandra Cojocea 2016</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
